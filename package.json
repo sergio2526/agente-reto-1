@@ -1,0 +1,30 @@
+{
+  "name": "agente-reto-1",
+  "version": "1.0.0",
+  "description": "Agente conversacional 'Registro como Proveedor' (Reto técnico 01 · Perxia 2.0)",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node --import tsx src/server.ts",
+    "demo": "tsx demo.ts",
+    "test": "tsx scripts/e2e.ts",
+    "typecheck": "tsc --noEmit",
+    "build:modulo": "tsx scripts/build-modulo.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
+    "exceljs": "^4.4.0",
+    "openai": "^7.27.0",
+    "pdf-lib": "^1.17.1",
+    "tsx": "^4.23.15",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}

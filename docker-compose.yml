@@ -1,0 +1,10 @@
+services:
+  agente:
+    build: .
+    ports:
+      - "3002:3002"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      - PORT=3002
